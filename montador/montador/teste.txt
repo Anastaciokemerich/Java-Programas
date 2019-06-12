@@ -1,0 +1,17 @@
+;programa teste
+JMP inicio
+a db 10h
+b db A1h
+inicio:
+MOV AX,[a]
+MOV BX,[b]
+ADD AX,BX
+MOV CX,13H
+MOV AX,CX
+CMP AX,BX
+JL funcao
+HLT
+funcao:
+INC AX
+DEC BX
+HLT

@@ -1,0 +1,17 @@
+main:
+00 call soma
+01 call sub
+02 call mult
+03 call stop
+soma:
+04 add r1 101
+05 jmp 00000001
+sub:
+06 sub r1 1
+07 jmp 00000010
+mult:
+08 desq r1
+09 ddir r1
+10 jmp 00000011
+stop:
+11 halt

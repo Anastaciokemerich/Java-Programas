@@ -1,0 +1,45 @@
+jmp inicio
+
+;a db 00h
+;b db ABh
+
+inicio:
+mov ax, 10h
+mov bx, ax
+mov cx, bx
+mov dx, cx
+
+cmp ax, 10h
+jz faz
+jnz naofaz
+
+faz:
+mov ax, 20h
+mov bx, ax
+mov cx, bx
+mov dx, cx
+hlt
+
+
+naofaz:
+call funcao
+hlt
+
+
+funcao proc
+mult ax, 02h
+mult bx, 02h
+mult cx, 02h
+mult dx, 02h
+ret
+funcao endp
+
+interrupt proc
+pushall
+mov ax, 00h
+mov bx, 00h
+mov cx, 00h
+mov dx, 00h
+popall
+iret
+interrupt endp

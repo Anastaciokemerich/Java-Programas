@@ -1,0 +1,8 @@
+NR  8-BITS      COMANDO     FUNÇÃO
+0   00000000    ADD R0 R1   Adiciona o valor de R1 ao valor de R0 em R0
+1   00000001    ADD R0 @R1  Adiciona o endereço de R1 ao valor de R0 em R0
+2   00000010    ADD R0 #DEC Adiciona o decimal ao valor de R0 em R0
+3   00000011    ADD R0 #D+8 Adiciona o decimal maior que 8 bits ao R0 em R0
+4   00000100    ADD R0 101  Adiciona o BINÁRIO 101 ao valor de R0 em R0
+5   00000101    ADD R0 B+8  Adiciona o BINÁRIO maior que 8 bits ao valor de R0 em R0
+

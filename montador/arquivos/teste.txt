@@ -1,0 +1,28 @@
+ORG 100h
+jmp @inicio
+T dw "teste"
+x db "awaraw"
+Y dw 5000
+Z dw "awaraw"
+P db 10
+O dw 50
+@inicio:
+add [a], bx
+add a, bx
+add bx, a
+mov al, x
+mov mov, X
+mov Y, al
+mov bh, al
+mov ah, X
+and al, bl
+or bl, al
+sub al, bl
+add al, 15
+div bl
+xor ah, bh
+not al
+mov al, 100
+cmp al, bl
+mov al, Z
+endp

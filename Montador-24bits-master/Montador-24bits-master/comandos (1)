@@ -1,0 +1,28 @@
+NR    8-BITS      COMANDO      FUNÇÂO
+0    00000000    add r0 r1    Adiciona   o valor de r1 ao valor de r0 em r0
+1    00000001    add r0 @r1   Adiciona   o endereço de r1 ao valor de r0 em r0
+2    00000010    add r0 #DEC  Adiciona   o decimal ao valor de r0 em r0
+3    00000011    add r0 #D+8  Adiciona   o decimal maior que 8 bits ao valor de r0 em r0
+4    00000100    add r0 101   Adiciona   o BINARIO 101 ao valor de r0 em r0
+5    00000101    add r0 B+8   Adiciona   o binario maior que 8 bits ao valor de r0 em r0
+6    00000110    sub r0 r1    Subtrai    o valor de r1 ao valor de r0 em r0
+7    00000111    sub r0 @r1   Subtrai    o endereço de r1 ao valor de r0 em r0
+8    00001000    sub r0 #DEC  Subtrai    o decimal ao valor de r0 em r0
+9    00001001    sub r0 #D+8  Subtrai    o decimal maior que 8 bits ao valor de r0 em r0
+10   00001010    sub r0 101   Subtrai    o BINARIO 101 ao valor de r0 em r0
+11   00001011    sub r0 B+8   Subtrai    o binario maior que 8 bits ao valor de r0 em r0
+12   00001100    mult r0 r1   multiplica o valor de r1 pelo valor de r0 em r0
+13   00001101    mult r0 @r1  multiplica o endereço de r1 pelo valor de r0 em r0
+14   00001110    mult r0 #DEC multiplica o decimal pelo valor de r0 em r0
+15   00001111    mult r0 #D+8 multiplica o decimal maior que 8 bits pelo valor de r0 em r0
+16   00010000    mult r0 101  multiplica o BINARIO 101 peo valor de r0 em r0
+17   00010001    mult r0 B+8  multiplica o binario maior que 8 bits pelo valor de r0 em r0
+18   00010010    div r0 r1    Divide     o valor de r1 pelo valor de r0 em r0
+19   00010011    div r0 @r1   Divide     o endereço de r1 pelo valor de r0 em r0
+20   00010100    div r0 #DEC  Divide     o decimal pelo valor de r0 em r0
+21   00010101    div r0 #D+8  Divide     o decimal maior que 8 bits pelo valor de r0 em r0
+22   00010110    div r0 101   Divide     o BINARIO 101 peo valor de r0 em r0
+23   00010111    div r0 B+8   Divide     o binario maior que 8 bits pelo valor de r0 em r0
+24   00011000    desq r0      Desloca    o valor do registro � esquerda
+25   00011001    ddir r0      Desloca    o valor do registro � esquerda
+26   00011010    jmp linha    Pula       Para a 'linha'
